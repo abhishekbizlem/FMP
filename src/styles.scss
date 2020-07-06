@@ -1,0 +1,208 @@
+@import "assets/base";
+@import "../node_modules/c3/c3.min.css";
+
+html, body { height: 100%; }
+body,* { margin: 0; font-family: 'Poppins', sans-serif;}
+
+::-webkit-scrollbar {
+    width: 6px;
+    height: 6px; 
+    border-radius:4px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #797979; 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }
+.innerWrapper{
+    background-color: #fbfbfb;
+}
+.loginImage{
+    background-color: #ffffff;
+    padding: 5% 0 0;
+    img{
+        width:100%;
+    }
+}
+.loginForm{
+    padding: 5% 10% 5% 20%;
+    h2{
+        color: #222d39;
+        font-weight: 700;
+        margin-bottom: 18px;
+        font-size: 35px;
+    }
+    .tagLine{
+        font-size: 15px;
+        font-weight: 300;
+    }
+    label{
+        color: #161341;
+        font-size: 14px;
+        margin-bottom: 15px;
+        font-weight: 400;
+        position: relative;
+    }
+    input.form-control{
+        height: 53px;
+       font-size: 15px;
+       font-weight: 400;
+        color: #222d39;
+        border-radius: 4px;
+        background-color: #fff;
+        -webkit-box-shadow: 0 2px 4px 0 rgba(12,0,46,.04);
+        box-shadow: 0 2px 4px 0 rgba(12,0,46,.04);
+        width: 100%;
+        border: 1px solid #fff;
+        padding-left: 30px;
+        &:focus{
+            border-color: #f2effc;
+            -webkit-box-shadow: 0 10px 14px 0 rgba(12,0,46,.06);
+            box-shadow: 0 10px 14px 0 rgba(12,0,46,.06);
+            outline: 0;
+        }
+    }
+}
+.form-group{
+    margin-bottom: 25px;
+}
+.bottomSec {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+        font-size: 14px;
+    margin-top: 30px;
+}
+.bottomSec .checkbox label {
+    margin-bottom: 0;
+    color: #161341;
+}
+.bottomSec .checkbox input[type=checkbox] {
+    position: relative;
+    width: 10px;
+    height: 10px;
+    margin-right: 10px;
+}
+.forgotPass a{
+    color: #677294;
+    cursor: pointer;
+}
+.remember{
+    cursor: pointer;
+}
+.button{
+    width: 100%;
+    background: #4753fd;
+    background: linear-gradient(90deg, #4753fd 19%, #2291fa 60%, #00c8f9 100%);
+    color: #fff;
+    margin-top: 35px;
+    padding: 15px 30px;
+    border: 1px solid #e8e8e8;
+    -webkit-transition: all .3s linear;
+    -o-transition: all .3s linear;
+    transition: all .3s linear;
+    display: inline-block;
+    border-radius: 3px;
+}
+.asterisk{
+    position: absolute;
+    right: -10px;
+    top: 0px;
+}
+.button:hover{
+    -webkit-box-shadow: 0 20px 30px 0 rgba(61,100,244,.16);
+    box-shadow: 0 20px 30px 0 rgba(61,100,244,.16);
+}
+.altLogin {
+    font-size: 14px;
+    color: #9ca3b9;
+    margin-top: 25px;
+}
+.brandName{
+    font-size: 18px;
+    padding: 13px 8px 8px 15px;
+    color: #fff;
+}
+.nav-link.iconImg img{
+    margin: 0;
+    border-radius: 100%;
+    padding: 6px;
+}
+.loginLink{
+    color: #4753fd;
+    display: inline-block;
+    margin-left: 6px;
+    cursor: pointer;
+    &:hover{
+        color: #4753fd;
+        text-decoration: none;
+    }
+}
+.formElement{
+    margin-top: 55px;
+}
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color:    #9ca3c9;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+   color:    #9ca3c9;
+   opacity:  1;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+   color:    #9ca3c9;
+   opacity:  1;
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+   color:    #9ca3c9;
+}
+::-ms-input-placeholder { /* Microsoft Edge */
+   color:    #9ca3c9;
+}
+
+::placeholder { /* Most modern browsers support this now. */
+   color:    #9ca3c9;
+}
+.nav-link {
+    display: block;
+    padding: 5px 5px;
+}
+.app-header .logo-src {
+    display: block; 
+}
+.app-header.header-shadow  {
+    background: #fafbfc !important;
+    box-shadow: none;
+}
+.app-header__content {
+    padding: 10px 10px;
+    box-shadow: 15px 0 21px -2px rgba(0, 0, 0, 0.21);
+    background: rgb(71,83,253);
+    background: linear-gradient(90deg, rgba(71,83,253,1) 19%, rgba(34,145,250,1) 60%, rgba(0,200,249,1) 100%);
+}
+
+@media (max-width:768px){
+  .loginImage{
+      display: none;
+  }
+  .loginForm {
+        padding: 5% 10%;
+    }
+}
+@media (max-width:400px){
+    .loginForm {
+          padding: 5%;
+      }
+  }
